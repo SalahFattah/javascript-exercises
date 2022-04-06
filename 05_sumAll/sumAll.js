@@ -1,4 +1,7 @@
 const sumAll = function(start,finish) {
+    if(start<0||finish<0||typeof start!='number'|| typeof finish!='number'){
+        return "ERROR";
+    }
     if(start>finish){
         let temp=start;
         start=finish;
