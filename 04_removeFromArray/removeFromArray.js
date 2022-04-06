@@ -1,5 +1,6 @@
-const removeFromArray = function(arr,num) {
-     arr.splice(arr.indexOf(num),1);
+const removeFromArray = function(arr,...num) {
+    num.sort();
+     arr.splice(arr.indexOf(num[0]),num.length);
      return arr;
 };
 
